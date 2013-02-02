@@ -46,7 +46,7 @@ public class KitGhost extends Kit {
 
 	@Override
 	public int getRequiredPriority() {
-		return 10;
+		return 25;
 	}
 
 }
