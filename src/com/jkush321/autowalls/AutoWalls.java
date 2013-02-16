@@ -1313,6 +1313,7 @@ public class AutoWalls extends JavaPlugin implements Listener {
 					if (blueTeam.contains((Player)e.getEntity()) && blueTeam.contains(d)) { d.sendMessage(ChatColor.RED + "You can not team kill!"); e.setCancelled(true); return; }
 					if (greenTeam.contains((Player)e.getEntity()) && greenTeam.contains(d)) { d.sendMessage(ChatColor.RED + "You can not team kill!"); e.setCancelled(true); return; }
 					if (orangeTeam.contains((Player)e.getEntity()) && orangeTeam.contains(d)) { d.sendMessage(ChatColor.RED + "You can not team kill!"); e.setCancelled(true); return; }
+					if (WallDropper.time > 0 && playing.contains((Player)e.getEntity()) && playing.contains(d) { d.sendMessage(ChatColor.RED + "The walls haven't dropped yet! Why are you shooting " + e.getEntity().getName() + "?"); e.setCancelled(true); return; }
 				}
 			}
 		}
